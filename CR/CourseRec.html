@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang'="en-US">
+<head>
+<title></title>
+	<!-- JQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Select box CDN -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+	<!-- Link my stylesheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<!-- Link my javascript -->
+	<script src="myjs.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<form id="form-cr">
+		<h1>Course recommender:</h1>
+		<div class="row">
+			<fieldset class="col-md-2">
+			<legend>Grade:</legend>
+			<select class="select-cr-grade">
+				<option name="grade" value="8">Grade 8</option>
+				<option name="grade" value="9">Grade 9</option>
+				<option name="grade" value="10">Grade 10</option>
+				<option name="grade" value="11">Grade 11</option>
+				<option name="grade" value="11">Grade 12</option>
+			</select>	
+			</fieldset>
+			<fieldset class="col-md-3">
+			<legend>Location:</legend>
+			<select class="select-cr-location" multiple="multiple">
+				<option name="location" value="Cambridge">Cambridge</option>
+				<option name="location" value="Oxford">Oxford</option>
+				<option name="location" value="St Andrews"> St Andrews<br>
+				<option name="location" value="Barcelona"> Barcelona<br>
+				<option name="location" value="Salamanca"> Salamanca<br>
+				<option name="location" value="Paris"> Paris<br>
+				<option name="location" value="Montpellier"> Montpellier<br>
+				<option name="location" value="New York City"> New York City<br>
+				<option name="location" value="Los Angeles"> Los Angeles<br>
+				<option name="location" value="Boston"> Boston
+			</select>
+			</fieldset>
+			<fieldset class="col-md-7">
+			<legend>Category:</legend>
+			<select class="select-cr-cat" multiple="multiple">
+				 <option name="category" value="FIELD3"> History<br>
+				 <option name="category" value="FIELD4"> The Arts and Performance<br>
+				 <option name="category" value="FIELD5"> Business and Economics<br>
+				 <option name="category" value="FIELD6"> Computing and Technology<br>
+				 <option name="category" value="FIELD7"> Law and Current Affairs<br>
+				 <option name="category" value="FIELD8"> Literature and Writing<br>
+				 <option name="category" value="FIELD9"> Medicine<br>
+				 <option name="category" value="FIELD10"> Philosophy<br>
+				 <option name="category" value="FIELD11"> Science and the Universe<br>
+				 <option name="category" value="FIELD12"> Leadership<br>
+				 <option name="category" value="FIELD13"> The Human Mind<br>
+				 <option name="category" value="STEM"> STEM<br>
+				 <option name="category" value="FIELD14"> Most Popular<br>
+				 <option name="category" value="FIELD15"> For students with 0-2 years of French<br>
+				 <option name="category" value="FIELD16"> For students with 3 or more years of French<br>
+				 <option name="category" value="FIELD17"> For students with 0-2 years of Spanish<br>
+				 <option name="category" value="FIELD18"> For students with 3 or more years of Spanish
+			</select>	
+			</fieldset>	
+		</div>
+		</form>
+		<input type="button" id="btn-cr" class="btn btn-default" onclick="myFunction()" value="Submit">
+	</div>
+<script type="text/javascript" language="javascript" src="data.js"></script>
+</body>
+</html>
