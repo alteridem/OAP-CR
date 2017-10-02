@@ -1,4 +1,4 @@
-	// Initialize Select2 on the relevant elements
+// Initialize Select2 on the relevant elements
 	$(document).ready(function() {
 			$(".select-cr-location").select2();
 			$(".select-cr-cat").select2();
@@ -78,15 +78,11 @@
 			});
 		} 
 
-		var textResults = "";
 		console.log("These are the remaining programs and courses:");
 		// Display all remaining courses in "PROGRAM : COURSE" format
 		$.each(newJsonObject, function(index, value) {
 			$.each(newJsonObject[index]["courses"], function(i, v) {
 				console.log(newJsonObject[index]["progName"] + ": " + newJsonObject[index]["courses"][i]["name"]);
-				textResults += newJsonObject[index]["progName"] + ": " + newJsonObject[index]["courses"][i]["name"] + "\n";
 			});
 		});
-		$(#display-results).text(textResults);
-		
 	}
