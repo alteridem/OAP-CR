@@ -78,7 +78,7 @@
 			});
 		} 
 		
-		var textResults = "";
+		var textResults = "<br /> <br />";
 
 		console.log("These are the remaining programs and courses:");
 		// Display all remaining courses in "PROGRAM : COURSE" format
