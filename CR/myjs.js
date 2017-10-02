@@ -87,4 +87,6 @@
 				console.log(newJsonObject[index]["progName"] + ": " + newJsonObject[index]["courses"][i]["name"]);
 			});
 		});
+		
+		$("#display-results").text("hey!");
 	}
