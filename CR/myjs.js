@@ -87,5 +87,6 @@
 				textResults += newJsonObject[index]["progName"] + ": " + newJsonObject[index]["courses"][i]["name"] + "\n";
 			});
 		});
+		$(#display-results).text(textResults);
 		
 	}
