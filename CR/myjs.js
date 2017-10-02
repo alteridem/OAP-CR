@@ -85,8 +85,9 @@
 		$.each(newJsonObject, function(index, value) {
 			$.each(newJsonObject[index]["courses"], function(i, v) {
 				console.log(newJsonObject[index]["progName"] + ": " + newJsonObject[index]["courses"][i]["name"]);
+				textResults += newJsonObject[index]["progName"] + ": " + newJsonObject[index]["courses"][i]["name"] + "\n";
 			});
 		});
 		
-		$("#display-results").text("hey!");
+		$("#display-results").text(textResults);
 	}
