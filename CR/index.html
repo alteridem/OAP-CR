@@ -18,12 +18,8 @@
 </head>
 
 <body>
-	<div class="container">
-		<form id="form-cr">
-		<h1>Course recommender:</h1>
-		<div class="row">
-			<fieldset class="col-md-2">
-			<legend>Grade:</legend>
+	   <h1>Course recommender:</h1>
+		<div id="form-cr">
 			<select class="select-cr-grade">
 				<option name="grade" value="8">Grade 8</option>
 				<option name="grade" value="9">Grade 9</option>
@@ -31,9 +27,6 @@
 				<option name="grade" value="11">Grade 11</option>
 				<option name="grade" value="11">Grade 12</option>
 			</select>	
-			</fieldset>
-			<fieldset class="col-md-3">
-			<legend>Location:</legend>
 			<select class="select-cr-location" multiple="multiple">
 				<option name="location" value="Cambridge">Cambridge</option>
 				<option name="location" value="Oxford">Oxford</option>
@@ -46,9 +39,6 @@
 				<option name="location" value="Los Angeles"> Los Angeles<br>
 				<option name="location" value="Boston"> Boston
 			</select>
-			</fieldset>
-			<fieldset class="col-md-4">
-			<legend>Category:</legend>
 			<select class="select-cr-cat" multiple="multiple">
 				 <option name="category" value="FIELD3"> History<br>
 				 <option name="category" value="FIELD4"> The Arts and Performance<br>
@@ -68,12 +58,9 @@
 				 <option name="category" value="FIELD17"> For students with 0-2 years of Spanish<br>
 				 <option name="category" value="FIELD18"> For students with 3 or more years of Spanish
 			</select>	
-			</fieldset>	
 		</div>
-		</form>
 		<input type="button" id="btn-cr" class="btn btn-default" onclick="myFunction()" value="Submit">
 	   <p id="display-results"></p>
-	</div>
 <script type="text/javascript" language="javascript" src="data.js"></script>
 </body>
 </html>
