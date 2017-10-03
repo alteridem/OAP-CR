@@ -1,18 +1,9 @@
 // Initialize Select2 on the relevant elements
 	$(document).ready(function() {
-			$(".select-cr-location").select2();
-			$(".select-cr-cat").select2();
+			$(".select-cr-location").select2({width: 'resolve'});
+			$(".select-cr-cat").select2({width: 'resolve'});
 			$(".select-cr-grade").select2();
 	});
-
-	$(".select-cr-location").select2({
-		width: 'resolve'
-	});
-
-	$(".select-cr-cat").select2({
-		width: 'resolve'
-	});
-
 
 	// Upon pressing the submit button
 	function myFunction() {
