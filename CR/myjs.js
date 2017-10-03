@@ -1,7 +1,7 @@
 // Initialize Select2 on the relevant elements
 	$(document).ready(function() {
-			$(".select-cr-location").select2({width: 'resolve'});
-			$(".select-cr-cat").select2({width: 'resolve'});
+			$(".select-cr-location").select2({width: '100%'});
+			$(".select-cr-cat").select2({width: '100%'});
 			$(".select-cr-grade").select2();
 	});
 
