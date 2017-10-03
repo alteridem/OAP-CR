@@ -1,8 +1,14 @@
 // Initialize Select2 on the relevant elements
 	$(document).ready(function() {
-			$(".select-cr-location").select2({dropdownAutoWidth: true});
-			$(".select-cr-cat").select2({dropdownAutoWidth: true});
-			$(".select-cr-grade").select2({dropdownAutoWidth: true});
+			$(".select-cr-location").select2({
+				dropdownParent: $('#form-cr')
+			});
+			$(".select-cr-cat").select2({
+				dropdownParent: $('#form-cr')
+			});
+			$(".select-cr-grade").select2({
+				dropdownParent: $('#form-cr')
+			});
 	});
 
 	// Upon pressing the submit button
