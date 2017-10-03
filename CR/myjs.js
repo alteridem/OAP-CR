@@ -1,7 +1,7 @@
 // Initialize Select2 on the relevant elements
 	$(document).ready(function() {
-			$(".select-cr-location").select2({dropdownAutoWidth: true});
-			$(".select-cr-cat").select2({dropdownAutoWidth: true});
+			$(".select-cr-location").select2();
+			$(".select-cr-cat").select2();
 			$(".select-cr-grade").select2();
 	});
 
