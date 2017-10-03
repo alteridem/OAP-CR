@@ -1,6 +1,6 @@
 // Initialize Select2 on the relevant elements
 	$(document).ready(function() {
-			$(".select-cr-location").select2({dropdownAutoWidth: true});
+			$(".select-cr-location").select2({width: 'resolve'});
 			$(".select-cr-cat").select2({dropdownAutoWidth: true});
 			$(".select-cr-grade").select2({dropdownAutoWidth: true});
 	});
