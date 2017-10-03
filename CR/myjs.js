@@ -3,15 +3,14 @@
 			$(".select-cr-location").select2();
 			$(".select-cr-cat").select2();
 			$(".select-cr-grade").select2();
-		
-		$(".select-cr-location").select2({
+	});
+
+	$(".select-cr-location").select2({
 		placeholder: "Select a location..."
 	});
 
 	$(".select-cr-cat").select2({
 		placeholder: "Select a category..."
-	});
-		
 	});
 
 
