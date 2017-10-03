@@ -5,6 +5,15 @@
 			$(".select-cr-grade").select2();
 	});
 
+	$(".select-cr-location").select2({
+		placeholder: "Select a location..."
+	});
+
+	$(".select-cr-cat").select2({
+		placeholder: "Select a category..."
+	});
+
+
 	// Upon pressing the submit button
 	function myFunction() {
 		// Make a copy of the program array
