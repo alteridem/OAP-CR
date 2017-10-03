@@ -6,11 +6,11 @@
 	});
 
 	$(".select-cr-location").select2({
-		placeholder: "Select a location..."
+		width: 'resolve'
 	});
 
 	$(".select-cr-cat").select2({
-		placeholder: "Select a category..."
+		width: 'resolve'
 	});
 
 
