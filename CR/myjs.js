@@ -96,7 +96,7 @@
 			});
 		});
 		
-		if (textResults == null) {
+		if (textResults === "") {
 		$("#display-results").html("You have no results...");
 		} else {
 		$("#display-results").html(textResults);
