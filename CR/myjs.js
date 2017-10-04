@@ -19,7 +19,7 @@
 		var selectedGrade = parseInt($(".select-cr-grade").val());
 		
 		// BY LOCATION: If one or more locations is selected 
-		if ($(".select-cr-location").val() == null ) {
+		if ($(".select-cr-location").val() !== null ) {
 			// Make array containing all selected locations
 			var locations = $(".select-cr-location").val();
 			// Iterate through the entire array of programs
@@ -54,7 +54,7 @@
 		}
 		
 		// BY CATEGORY: If one or more categories is selected
-		if ($(".select-cr-cat").val() == null) {
+		if ($(".select-cr-cat").val() !== null) {
 			// Make array containing all selected categories
 			var categories = $(".select-cr-cat").val();
 			// Iterate through remaining array of programs
