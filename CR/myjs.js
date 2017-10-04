@@ -54,7 +54,7 @@
 		}
 		
 		// BY CATEGORY: If one or more categories is selected
-		if ($(".select-cr-cat").val().length > 0 ) {
+		if ($(".select-cr-cat").has('option').length > 0 ) {
 			// Make array containing all selected categories
 			var categories = $(".select-cr-cat").val();
 			// Iterate through remaining array of programs
