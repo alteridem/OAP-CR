@@ -1,6 +1,7 @@
 var jsonObject = [
 {
 	"progName" : "The Cambridge Prep Experience",
+	"progUrl": "The-Cambridge-Prep-Experience",
 	"location" : "Cambridge",
 	"grade": [8, 9],
 	"courses" : [
@@ -35,6 +36,7 @@ var jsonObject = [
 }, 
 {
 	"progName" : "The Cambridge Tradition",
+	"progUrl" : "The-Cambridge-Tradition",
 	"location" : "Cambridge",
 	"grade": [10, 11, 12],
 	"courses" : [
@@ -74,6 +76,7 @@ var jsonObject = [
 }, 
 {
 	"progName" : "The Oxford Prep Experience",
+	"progName" : "The-Oxford-Prep-Experience",
 	"location" : "Oxford",
 	"grade": [8, 9],
 	"courses" : [
@@ -109,6 +112,7 @@ var jsonObject = [
 }, 
 {
 	"progName" : "The Oxford Tradition",
+	"progName" : "The-Oxford-Tradition",
 	"location" : "Oxford",
 	"grade": [10, 11, 12],
 	"courses" : [
@@ -159,6 +163,7 @@ var jsonObject = [
 }, 
 {
 	"progName" : "Oxbridge at St Andrews",
+	"progUrl" : "Oxbridge-at-St-Andrews",
 	"location" : "St Andrews",
 	"grade": [9, 10, 11, 12],
 	"courses" : [
@@ -183,6 +188,7 @@ var jsonObject = [
 }, 
 {
 	"progName" : "La Academia de Barcelona",
+	"progUrl" : "La-Academia-de-Barcelona",
 	"location" : "Barcelona",
 	"grade": [9, 10, 11, 12],
 	"courses" : [
@@ -209,6 +215,7 @@ var jsonObject = [
 }, 
 {
 	"progName" : "La Academia de España",
+	"progUrl" : "La-Academia-de-España",
 	"location" : "Salamanca",
 	"grade": [9, 10, 11, 12],
 	"courses" : [
@@ -229,6 +236,7 @@ var jsonObject = [
 }, 
 {
 	"progName" : "L'Académie de Paris",
+	"progUrl" : "LAcadémie-de-Paris",
 	"location" : "Paris",
 	"grade": [9, 10, 11, 12],
 	"courses" : [
@@ -257,6 +265,7 @@ var jsonObject = [
 }, 
 {
 	"progName" : "L'Académie de France",
+	"progUrl" : "LAcadémie-de-France",
 	"location" : "Montpellier",
 	"grade": [9, 10, 11, 12],
 	"courses" : [
@@ -276,7 +285,8 @@ var jsonObject = [
 				]
 }, 
 {
-	"progName" : "New York College Experience",
+	"progName" : "The New York College Experience",
+	"progUrl" : "The-New-York-College-Experience",
 	"location" : "New York City",
 	"grade": [9, 10, 11, 12],
 	"courses" : [
@@ -307,6 +317,7 @@ var jsonObject = [
 }, 
 {
 	"progName" : "Oxbridge at UCLA",
+	"progUrl" : "Oxbridge-at-UCLA",
 	"location" : "Los Angeles",
 	"grade": [10, 11, 12],
 	"courses" : [
@@ -328,6 +339,7 @@ var jsonObject = [
 }, 
 {
 	"progName" : "The College Experience in Boston",
+	"progUrl" : "The-College-Experience-in-Boston",
 	"location" : "Boston",
 	"grade": [9, 10, 11, 12],
 	"courses" : [
@@ -345,6 +357,7 @@ var jsonObject = [
 }, 
 {
 	"progName" : "The New York College Seminar",
+	"progUrl" : "The-New-York-College-Seminar",
 	"location" : "New York City",
 	"grade": [9, 10, 11, 12],
 	"courses" : [
