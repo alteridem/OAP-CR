@@ -97,7 +97,7 @@
 		});
 		
 		if (textResults === "") {
-		$("#display-results").html("You have no results...");
+		$("#display-results").html(selectedGrade);
 		} else {
 		$("#display-results").html(textResults);
 		}
