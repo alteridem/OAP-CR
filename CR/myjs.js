@@ -98,6 +98,7 @@
 		
 		if (textResults === "") {
 		$("#display-results").html(selectedGrade);
+			console.log(selectedGrade);
 		} else {
 		$("#display-results").html(textResults);
 		}
