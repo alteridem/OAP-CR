@@ -76,7 +76,7 @@ var jsonObject = [
 }, 
 {
 	"progName" : "The Oxford Prep Experience",
-	"progName" : "The-Oxford-Prep-Experience",
+	"progUrl" : "The-Oxford-Prep-Experience",
 	"location" : "Oxford",
 	"grade": [8, 9],
 	"courses" : [
@@ -112,7 +112,7 @@ var jsonObject = [
 }, 
 {
 	"progName" : "The Oxford Tradition",
-	"progName" : "The-Oxford-Tradition",
+	"progUrl" : "The-Oxford-Tradition",
 	"location" : "Oxford",
 	"grade": [10, 11, 12],
 	"courses" : [
