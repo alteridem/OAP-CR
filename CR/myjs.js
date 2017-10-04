@@ -100,7 +100,7 @@
 			if (selectedGrade === 8) {
 				$("#display-results").html("Only Oxford and Cambridge have programs for students in the 8th grade.");
 			} else {
-				$("#display-results").html(Please alter your search criteria...);
+				$("#display-results").html("Please alter your search criteria...");
 			}
 		} else {
 		$("#display-results").html(textResults);
