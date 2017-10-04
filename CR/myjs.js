@@ -96,5 +96,6 @@
 			});
 		});
 		
+		console.log(textResults);
 		$("#display-results").html(textResults);
 	}
