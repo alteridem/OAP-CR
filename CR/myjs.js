@@ -96,6 +96,9 @@
 			});
 		});
 		
-		console.log(textResults);
+		if (textResults == null) {
+		$("#display-results").html("You have no results...");
+		} else {
 		$("#display-results").html(textResults);
+		}
 	}
