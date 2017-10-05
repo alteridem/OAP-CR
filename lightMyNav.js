@@ -6,10 +6,9 @@ var $subpages = $($(".subpage-item").get().reverse());
 var subpageIdTonavLink = {};
 $subpages.each(function() {
 	var id = $(this).attr('id');
+	console.log(id);
 	subpageIdTonavLink[id] = $('#light-my-nav dl dd a[href=#' + id + ']');
 });
-
-$(window).scroll(highlightNav);
 
 function highlightNav() {
 	var scrollPos = $(window).scrollTop();
@@ -19,6 +18,7 @@ function highlightNav() {
 		var subpageTop = currSubpage.offset().top;
 
 		if (scrollPos >= subpageTop) {
+			console.log("Ya made it!");
 			var id = currSubpage.attr('id');
 
 			var $navLink = subpageIdTonavLink[id];
@@ -31,5 +31,7 @@ function highlightNav() {
 		}
 	});
 }
+
+$(window).scroll(highlightNav);
 	
 });
