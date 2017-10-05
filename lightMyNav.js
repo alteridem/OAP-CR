@@ -22,7 +22,7 @@ function highlightNav() {
 		var subpageTop = currSubpage.offset().top;
 		var subpageHeight = currSubpage.height();
 
-		if (windowPos + 150px >= subpageTop && windowPos < (subpageTop + subpageHeight)) {
+		if (windowPos + 150 >= subpageTop && windowPos < (subpageTop + subpageHeight)) {
 			var id = currSubpage.attr('id');
 
 			var $navLink = subpageIdTonavLink[id];
@@ -32,7 +32,7 @@ function highlightNav() {
 				$navLink.addClass('active');
 			}
 
-		if (windowPos + windowHeight + 150px == docHeight) {
+		if (windowPos + windowHeight + 150 == docHeight) {
 			if (!$('#light-my-nav dd:last-child a').hasClass('active')) {
 				var navActiveCurrent = $('.active').attr("href");
 				$("a[href'" + navActiveCurrent + "']").removeClass('.active');
