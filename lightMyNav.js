@@ -11,14 +11,19 @@ $subpages.each(function() {
 });
 
 function highlightNav() {
-	var scrollPos = $(window).scrollTop();
+	// var scrollPos = $(window).scrollTop();
+	var windowPos = $(window).scrollTop();
+	var windowHeight = $(window).height();
+	var docHeight = $(document).height();
+
 
 	$subpages.each(function() {
 		var currSubpage = $(this);
+		// var subpageTop = currSubpage.offset().top;
 		var subpageTop = currSubpage.offset().top;
+		var subpageHeight = console.height();
 
-		if (scrollPos >= subpageTop) {
-			console.log("Ya made it!");
+		if (windowPos >= subpageTop && windowPos < (subpageTop + subpageHeight)) {
 			var id = currSubpage.attr('id');
 
 			var $navLink = subpageIdTonavLink[id];
@@ -26,9 +31,16 @@ function highlightNav() {
 			if (!$navLink.hasClass('active')) {
 				$navLinks.removeClass('active');
 				$navLink.addClass('active');
-				console.log("And made it here too!");
-				console.log("For this one:" + id);
 			}
+
+		if (windowPos + windowHeight == docHeight) {
+			if (!$('#light-my-nav dd:last-child a').hasClass('active')) {
+				var navActiveCurrent = $('.active').attr("href");
+				$("a[href'" + navActiveCurrent + "']").removeClass('.active');
+				$('#light-my-nav dd:last-child a').addClass('.active');
+			}
+		}
+
 		return false;
 		}
 	});
