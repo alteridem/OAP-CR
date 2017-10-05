@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-var $navLinks = $('#main-nav > dd > a');
+var $navLinks = $('#light-my-nav > dd > a');
 var $subpages = $($(".subpage-item").get().reverse());
 
 var subpageIdTonavLink = {};
 $subpages.each(function() {
 	var id = $(this).attr('id');
-	subpageIdTonavLink[id] = $('#main-nav > dd > a[href=#' + id + ']');
+	subpageIdTonavLink[id] = $('#light-my-nav > dd > a[href=#' + id + ']');
 });
 
 $(window).scroll(highlightNav);
