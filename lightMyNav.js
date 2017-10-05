@@ -21,7 +21,7 @@ function highlightNav() {
 		var currSubpage = $(this);
 		// var subpageTop = currSubpage.offset().top;
 		var subpageTop = currSubpage.offset().top;
-		var subpageHeight = console.height();
+		var subpageHeight = currSubpage.height();
 
 		if (windowPos >= subpageTop && windowPos < (subpageTop + subpageHeight)) {
 			var id = currSubpage.attr('id');
