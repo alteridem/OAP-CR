@@ -19,11 +19,10 @@ function highlightNav() {
 
 	$subpages.each(function() {
 		var currSubpage = $(this);
-		// var subpageTop = currSubpage.offset().top;
 		var subpageTop = currSubpage.offset().top;
 		var subpageHeight = currSubpage.height();
 
-		if (windowPos >= subpageTop && windowPos < (subpageTop + subpageHeight)) {
+		if (windowPos + 150px >= subpageTop && windowPos < (subpageTop + subpageHeight)) {
 			var id = currSubpage.attr('id');
 
 			var $navLink = subpageIdTonavLink[id];
@@ -33,7 +32,7 @@ function highlightNav() {
 				$navLink.addClass('active');
 			}
 
-		if (windowPos + windowHeight == docHeight) {
+		if (windowPos + windowHeight + 150px == docHeight) {
 			if (!$('#light-my-nav dd:last-child a').hasClass('active')) {
 				var navActiveCurrent = $('.active').attr("href");
 				$("a[href'" + navActiveCurrent + "']").removeClass('.active');
