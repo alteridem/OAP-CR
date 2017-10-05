@@ -16,7 +16,7 @@ function highlightNav() {
 
 	$subpages.each(function() {
 		var currSubpage = $(this);
-		var subpageTop = currSubpage.offset().top();
+		var subpageTop = currSubpage.offset().top;
 
 		if (scrollPos >= subpageTop) {
 			var id = currSubpage.attr('id');
