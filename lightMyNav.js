@@ -26,6 +26,8 @@ function highlightNav() {
 			if (!$navLink.hasClass('active')) {
 				$navLinks.removeClass('active');
 				$navLink.addClass('active');
+				console.log("And made it here too!");
+				console.log("For this one:" + id);
 			}
 		return false;
 		}
