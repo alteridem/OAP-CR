@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-var $navLinks = $('#light-my-nav dl dd a');
+var $navLinks = $('#light-my-nav dd a');
 var $subpages = $($(".subpage-item").get().reverse());
 
 var subpageIdTonavLink = {};
 $subpages.each(function() {
 	var id = $(this).attr('id');
 	console.log(id);
-	subpageIdTonavLink[id] = $('#light-my-nav dl dd a[href=#' + id + ']');
+	subpageIdTonavLink[id] = $('#light-my-nav dd a[href=#' + id + ']');
 });
 
 function highlightNav() {
