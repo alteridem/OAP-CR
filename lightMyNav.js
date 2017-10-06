@@ -1,16 +1,15 @@
 $(document).ready(function() {
 
-var $navLinks = $('#light-my-nav dd a');
+var $navLinks = $('.light-my-nav dd a');
 var $subpages = $($(".subpage-item").get().reverse());
 
 var subpageIdTonavLink = {};
 $subpages.each(function() {
 	var id = $(this).attr('id');
-	subpageIdTonavLink[id] = $('#light-my-nav dd a[href=#' + id + ']');
+	subpageIdTonavLink[id] = $('.light-my-nav dd a[href=#' + id + ']');
 });
 
 function highlightNav() {
-	// var scrollPos = $(window).scrollTop();
 	var windowPos = $(window).scrollTop();
 
 	$subpages.each(function() {
