@@ -21,6 +21,7 @@ function highlightNav() {
 		var $navLink = subpageIdTonavLink[id];
 
 		if (windowPos + 150 >= subpageTop && windowPos < (subpageTop + subpageHeight)) {
+			$navLinks.parent().removeClass('active');
 			$navLink.parent().addClass('active');
 		return false;
 		} else {
