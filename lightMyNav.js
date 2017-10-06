@@ -20,14 +20,11 @@ function highlightNav() {
 
 		if (windowPos + 150 >= subpageTop && windowPos < (subpageTop + subpageHeight)) {
 			var id = currSubpage.attr('id');
-
 			var $navLink = subpageIdTonavLink[id];
-
-			if (!$navLink.parent().hasClass('active')) {
-				$navLinks.parent().removeClass('active');
-				$navLink.parent().addClass('active');
-			}
+			$navLink.parent().addClass('active');
 		return false;
+		} else {
+			$navLink.parent().removeClass('active');	
 		}
 	});
 }
