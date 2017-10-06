@@ -12,9 +12,6 @@ $subpages.each(function() {
 function highlightNav() {
 	// var scrollPos = $(window).scrollTop();
 	var windowPos = $(window).scrollTop();
-	var windowHeight = $(window).height();
-	var docHeight = $(document).height();
-
 
 	$subpages.each(function() {
 		var currSubpage = $(this);
@@ -30,14 +27,6 @@ function highlightNav() {
 				$navLinks.parent().removeClass('active');
 				$navLink.parent().addClass('active');
 			}
-
-		if (windowPos + windowHeight + 150 == docHeight) {
-			if (!$('#light-my-nav dd:last-child a').hasClass('active')) {
-				var navActiveCurrent = $('.active').attr("href");
-				$("a[href'" + navActiveCurrent + "']").removeClass('.active');
-				$('#light-my-nav dd:last-child a').addClass('.active');
-			}
-		}
 
 		return false;
 		}
