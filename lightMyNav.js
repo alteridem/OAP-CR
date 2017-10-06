@@ -19,7 +19,7 @@ function highlightNav() {
 		var id = currSubpage.attr('id');
 		var $navLink = subpageIdTonavLink[id];
 
-		if (windowPos + 150 >= subpageTop && windowPos < (subpageTop + subpageHeight)) {
+		if (windowPos + 150 >= subpageTop ) {
 			$navLinks.parent().removeClass('active');
 			$navLink.parent().addClass('active');
 		return false;
