@@ -17,10 +17,10 @@ function highlightNav() {
 		var currSubpage = $(this);
 		var subpageTop = currSubpage.offset().top;
 		var subpageHeight = currSubpage.height();
+		var id = currSubpage.attr('id');
+		var $navLink = subpageIdTonavLink[id];
 
 		if (windowPos + 150 >= subpageTop && windowPos < (subpageTop + subpageHeight)) {
-			var id = currSubpage.attr('id');
-			var $navLink = subpageIdTonavLink[id];
 			$navLink.parent().addClass('active');
 		return false;
 		} else {
