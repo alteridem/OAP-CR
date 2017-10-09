@@ -8,6 +8,26 @@ $subpages.each(function() {
 	var id = $(this).attr('id');
 	subpageIdTonavLink[id] = $('.light-my-nav dd a[href=#' + id + ']');
 });
+	
+// throttle function, enforces a minimum time interval; credit to David @ github
+function throttle(fn, interval) {
+    var lastCall, timeoutId;
+    return function () {
+        var now = new Date().getTime();
+        if (lastCall && now < (lastCall + interval) ) {
+            // if we are inside the interval we wait
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(function () {
+                lastCall = now;
+                fn.call();
+            }, interval - (now - lastCall) );
+        } else {
+            // otherwise, we directly call the function 
+            lastCall = now;
+            fn.call();
+        }
+    };
+}
 
 function highlightNav() {
 	var windowPos = $(window).scrollTop();
@@ -29,6 +49,6 @@ function highlightNav() {
 	});
 }
 
-$(window).scroll(highlightNav);
+$(window).scroll( throttle(highlightNav, 100) );
 	
 });
