@@ -83,6 +83,29 @@
 				}
 			});
 		} 
+
+			// may be worthwhile to check if either spanish lang are selected and neither Bar/Sal are
+				// add Span text to lang warning
+			// then check if either french lang are selected and neither Par/Peez are
+				// add French text to lang warning
+		
+		if ($(".select-cr-location").val() !== null && $(".select-cr-cat").val() !== null) {
+
+			var langResults = "";
+			
+			// Make array containing all selected locations and categories
+			var locations = $(".select-cr-location").val();
+			var categories = $(".select-cr-cat").val();
+
+			if ( ($.inArray("FIELD17", categories) != -1 || $.inArray("FIELD18", categories) != -1) && ($.inArray("Salamanca", locations) == -1 && $.inArray("Barcelona", locations) == -1)) {
+				langResults += "Only Barcelona and Salamanca offer courses in Spanish.";
+			}
+
+			if ( ($.inArray("FIELD15", categories) != -1 || $.inArray("FIELD16", categories) != -1) && ($.inArray("Paris", locations) == -1 && $.inArray("Montpellier", locations) == -1)) {
+				langResults += "<br /> Only Paris and Montpellier offer courses in French.";
+			}
+
+		}
 		
 		var textResults = "";
 
@@ -99,6 +122,8 @@
 		if (textResults === "") {
 			if (selectedGrade === 8) {
 				$("#display-results").html("Only Oxford and Cambridge have programs for students in the 8th grade.");
+			} else if (langResults != "") {
+				$("#display-results").html(langResults);
 			} else {
 				$("#display-results").html("Please alter your search criteria...");
 			}
