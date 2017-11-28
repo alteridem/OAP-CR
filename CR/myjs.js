@@ -114,7 +114,7 @@
 		$.each(newJsonObject, function(index, value) {
 			$.each(newJsonObject[index]["courses"], function(i, v) {
 				console.log(newJsonObject[index]["progName"] + ": " + newJsonObject[index]["courses"][i]["name"]);
-				textResults += "<a href='http://oxbridge2017.drinkcaffeine.com/Programs/" + newJsonObject[index]["progUrl"] + "'>" + 
+				textResults += "<a href='http://www.oxbridgeprograms.com/Programs/" + newJsonObject[index]["progUrl"] + "'>" + 
 					newJsonObject[index]["progName"] + "</a>: " + newJsonObject[index]["courses"][i]["name"] + "<br />";
 			});
 		});
