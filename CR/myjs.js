@@ -121,7 +121,7 @@
 		
 		if (textResults === "") {
 			if (selectedGrade === 8) {
-				$("#display-results").html("Only Oxford and Cambridge have programs for students in the 8th grade.");
+				$("#display-results").html("8th graders can attend our Oxford and Cambridge Prep Programs in Europe and our Oxbridge at UCLA Prep Program in the United States.");
 			} else if (langResults != "") {
 				$("#display-results").html(langResults);
 			} else {
