@@ -128,6 +128,7 @@
 				$("#display-results").html("8th graders can attend our Oxford and Cambridge Prep Programs in Europe and our Oxbridge at UCLA Prep Program in the United States.");
 			} else if (selectedGrade === 9) {
 				var locations = $(".select-cr-location").val();
+				console.log("You are inside the selected Grade 9 opt");
 				if ($.inArray("Los Angeles", locations) != -1) {
 					$("#display-results").html("Did it work?");   
 				}
