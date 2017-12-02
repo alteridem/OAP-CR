@@ -112,13 +112,6 @@
 		console.log("These are the remaining programs and courses:");
 		console.log($(".select-cr-location").val());
 		console.log($(".select-cr-location").val()[0]);
-		console.log($(".select-cr-location").val()[0].toString);
-		console.log($(".select-cr-location").val().toString);
-		if ($(".select-cr-location").val()[0] === "Los Angeles") {
-			console.log("First worked");
-		} else if ($(".select-cr-location").val()[0].toString === "Los Angeles") {
-			console.log("Second worked");   
-		}
 		// Display all remaining courses in "PROGRAM : COURSE" format
 		$.each(newJsonObject, function(index, value) {
 			$.each(newJsonObject[index]["courses"], function(i, v) {
