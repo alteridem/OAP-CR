@@ -110,8 +110,6 @@
 		var textResults = "";
 
 		console.log("These are the remaining programs and courses:");
-		console.log($(".select-cr-location").val());
-		console.log($(".select-cr-location").val()[0]);
 		// Display all remaining courses in "PROGRAM : COURSE" format
 		$.each(newJsonObject, function(index, value) {
 			$.each(newJsonObject[index]["courses"], function(i, v) {
@@ -128,9 +126,8 @@
 				$("#display-results").html("8th graders can attend our Oxford and Cambridge Prep Programs in Europe and our Oxbridge at UCLA Prep Program in the United States.");
 			} else if (selectedGrade === 9) {
 				var locations = $(".select-cr-location").val();
-				console.log("You are inside the selected Grade 9 opt");
 				if ($.inArray("Los Angeles", locations) != -1) {
-					$("#display-results").html("Did it work?");   
+					$("#display-results").html("9th graders can attned our progams in Oxford, Cambridge, Paris, Montpellier, Barcelona, and Salamanca.");   
 				}
 			} else if (langResults != "") {
 				$("#display-results").html(langResults);
