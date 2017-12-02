@@ -115,7 +115,7 @@
 		console.log($(".select-cr-location").val()[0].toString);
 		if ($(".select-cr-location").val()[0] === "Los Angeles") {
 			console.log("First worked");
-		} else if (".select-cr-location").val()[0].toString === "Los Angeles") {
+		} else if ($(".select-cr-location").val()[0].toString === "Los Angeles") {
 			console.log("Second worked");   
 		}
 		// Display all remaining courses in "PROGRAM : COURSE" format
