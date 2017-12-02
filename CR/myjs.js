@@ -126,7 +126,7 @@
 				$("#display-results").html("7th graders can attend our Oxbridge at UCLA Prep program.");
 			} else if (selectedGrade === 8) {
 				$("#display-results").html("8th graders can attend our Oxford and Cambridge Prep Programs in Europe and our Oxbridge at UCLA Prep Program in the United States.");
-			} else if (selectedGrade === 9 && $(".select-cr-location").val() === "Los Angeles") {
+			} else if (selectedGrade === 9 && $(".select-cr-location").val()[0] === "Los Angeles") {
 				$("#display-results").html("Did it work?");
 			} else if (langResults != "") {
 				$("#display-results").html(langResults);
