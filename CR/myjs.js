@@ -113,6 +113,7 @@
 		console.log($(".select-cr-location").val());
 		console.log($(".select-cr-location").val()[0]);
 		console.log($(".select-cr-location").val()[0].toString);
+		console.log($(".select-cr-location").val().toString);
 		if ($(".select-cr-location").val()[0] === "Los Angeles") {
 			console.log("First worked");
 		} else if ($(".select-cr-location").val()[0].toString === "Los Angeles") {
