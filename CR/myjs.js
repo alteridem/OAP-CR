@@ -112,6 +112,7 @@
 		console.log("These are the remaining programs and courses:");
 		console.log($(".select-cr-location").val());
 		console.log($(".select-cr-location").val()[0]);
+		console.log($(".select-cr-location").val()[0] === "Los Angeles");
 		// Display all remaining courses in "PROGRAM : COURSE" format
 		$.each(newJsonObject, function(index, value) {
 			$.each(newJsonObject[index]["courses"], function(i, v) {
