@@ -1,5 +1,6 @@
 $(document).ready(function() {
-$('#bottom-nav .center').html('<div class="dropdownY">
+$('#bottom-nav .center').html('
+			<div class="dropdownY">
 			<a href="/About-Oxbridge" class="btn-white reverse dropbtnY">About Oxbridge</a>
 			<div class="dropdown-contentY">
 				<a href="/About-Oxbridge#subpage-item-1">Why Choose Oxbridge</a>
