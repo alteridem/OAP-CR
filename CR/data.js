@@ -378,7 +378,7 @@ var jsonObject = [
 		 {"name": "Creative Writing", "FIELD3": "", "FIELD4": "x", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "x", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
 		 {"name": "Photography, Design and New Media", "FIELD3": "", "FIELD4": "x", "FIELD5": "", "FIELD6": "x", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
 		 {"name": "Speech and Debate", "FIELD3": "", "FIELD4": "x", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "x", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
-		 {"name": "Virtual Reality/ Artificial Intelligence", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "x", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "x", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""}
+		 {"name": "Augmented Reality and Game Design", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "x", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "x", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""}
 				]
 
 }
