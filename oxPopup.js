@@ -2,7 +2,7 @@ var closeOnce = 0;
 
 $(window).scroll(function(){
 	if (closeOnce < 1) {
-		if($(document).scrollTop()>=$(document).height()/9) {
+		if($(document).scrollTop()>=$(document).height()/15) {
 		$(".oxpopup").show("slow"); 
 	} else {
 		$(".oxpopup").hide("slow");
