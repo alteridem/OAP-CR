@@ -15,6 +15,13 @@
 	function myFunction() {
 		// Make a copy of the program array
 		var newJsonObject = jQuery.extend(true, [], jsonObject);
+		// Make a copy of the course description array
+		//		0: Copy of program metadata
+		//		1: {progName -> {course -> description}}
+		var newJsonCourseDB = jQuery.extend(true, [], jsonCourseDB)
+		var courseDescription = newJsonCourseDB[1]
+		var programMetadata = newJsonCouresDB[0]
+
 		// Get selected grade option
 		var selectedGrade = parseInt($(".select-cr-grade").val());
 		
@@ -113,9 +120,16 @@
 		// Display all remaining courses in "PROGRAM : COURSE" format
 		$.each(newJsonObject, function(index, value) {
 			$.each(newJsonObject[index]["courses"], function(i, v) {
-				console.log(newJsonObject[index]["progName"] + ": " + newJsonObject[index]["courses"][i]["name"]);
-				textResults += "<a href='http://www.oxbridgeprograms.com/Programs/" + newJsonObject[index]["progUrl"] + "'>" + 
-					newJsonObject[index]["progName"] + "</a>: " + newJsonObject[index]["courses"][i]["name"] + "<br />";
+				var progName = newJsonObject[index]["progName"]
+				var courseName = newJsonObject[index]["courses"][i]["name"]
+				var progURL =  newJsonObject[index]["progUrl"]
+
+				console.log( progName + ": " + courseName);
+				textResults += "<a href='http://www.oxbridgeprograms.com/Programs/" + progURL + "'>" + 
+					progName + "</a>: " + courseName + "<br />";
+
+				var desc = "<p>" + courseDescription[ progName ][ courseName ] + "</p><br />"
+				textResults += desc
 			});
 		});
 		
