@@ -18,9 +18,9 @@
 		// Make a copy of the course description array
 		//		0: Copy of program metadata
 		//		1: {progName -> {course -> description}}
-		// var newJsonCourseDB = jQuery.extend(true, [], jsonCourseDB)
-		// var courseDescription = newJsonCourseDB[1]
-		// var programMetadata = newJsonCouresDB[0]
+		var newJsonCourseDB = jQuery.extend(true, [], jsonCourseDB)
+		var courseDescription = newJsonCourseDB[1]
+		var programMetadata = newJsonCourseDB[0]
 
 		// Get selected grade option
 		var selectedGrade = parseInt($(".select-cr-grade").val());
@@ -120,16 +120,24 @@
 		// Display all remaining courses in "PROGRAM : COURSE" format
 		$.each(newJsonObject, function(index, value) {
 			$.each(newJsonObject[index]["courses"], function(i, v) {
-				var progName = newJsonObject[index]["progName"]
-				var courseName = newJsonObject[index]["courses"][i]["name"]
-				var progURL =  newJsonObject[index]["progUrl"]
+				var progName = $.trim( newJsonObject[index]["progName"] );
+				var courseName = $.trim( newJsonObject[index]["courses"][i]["name"] );
+				var progURL = $.trim( newJsonObject[index]["progUrl"] );
 
 				console.log( progName + ": " + courseName + " (test)");
 				textResults += "<a href='http://www.oxbridgeprograms.com/Programs/" + progURL + "'>" + 
 					progName + "</a>: " + courseName + "<br />";
 
-				// var desc = "<p>" + courseDescription[ progName ][ courseName ] + "</p><br />"
-				// textResults += desc
+
+				// iteratively check the key in case of case sensitivity
+				var desc = "<p> Course DNE </p>"
+				for (course in courseDescription[ progName ]) {
+					if (course.toLowerCase() === courseName.toLowerCase()){
+						desc = "<p>" + courseDescription[ progName ][ course ] + "</p><br />";
+					}
+				}
+				
+				textResults += desc;
 			});
 		});
 		
