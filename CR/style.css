@@ -23,3 +23,12 @@
 }
 
 
+.content-box {
+	float: left;
+	width: 46%;
+	margin: 2%;
+	min-height: 200px;
+}
+.display-results {
+	text-align: center;
+}

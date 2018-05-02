@@ -1,3 +1,7 @@
+
+// Global Variables
+var message_length = 250
+
 // Initialize Select2 on the relevant elements
 	$(document).ready(function() {
 			$(".select-cr-location").select2({
@@ -124,20 +128,25 @@
 				var courseName = $.trim( newJsonObject[index]["courses"][i]["name"] );
 				var progURL = $.trim( newJsonObject[index]["progUrl"] );
 
+				textResults += '<div class="content-box">'
 				console.log( progName + ": " + courseName + " (test)");
 				textResults += "<a href='http://www.oxbridgeprograms.com/Programs/" + progURL + "'>" + 
-					progName + "</a>: " + courseName + "<br />";
+					progName + "</a> " + "<h5>" + courseName + "</h5>";
 
 
-				// iteratively check the key in case of case sensitivity
+				// iteratively check the key in case of case sensitivity and truncate the description
 				var desc = "<p> Course DNE </p>"
 				for (course in courseDescription[ progName ]) {
 					if (course.toLowerCase() === courseName.toLowerCase()){
-						desc = "<p>" + courseDescription[ progName ][ course ] + "</p><br />";
+						var temp = courseDescription[ progName ][ course ]
+						if( temp.length > message_length )
+							temp = temp.substring(0, message_length) + "..."
+						desc = "<p>" + temp + "</p><br />";
 					}
 				}
 				
 				textResults += desc;
+				textResults += "</div>"
 			});
 		});
 		
@@ -159,6 +168,7 @@
 				$("#display-results").html("Please alter your search criteria...");
 			}
 		} else {
+		textResults = '<div class="search-results">' + textResults + '</div>'
 		$("#display-results").html(textResults);
 		}
 	}
