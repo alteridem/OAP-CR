@@ -168,7 +168,6 @@ var message_length = 250
 				$("#display-results").html("Please alter your search criteria...");
 			}
 		} else {
-		textResults = '<div class="search-results">' + textResults + '</div>'
 		$("#display-results").html(textResults);
 		}
 	}
