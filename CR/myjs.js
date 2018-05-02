@@ -118,20 +118,38 @@ var message_length = 225
 
 		}
 		
-		var textResults = "";
+		/***************************************************************
+		*
+		* Return Program and Courses
+		*
+		***************************************************************/
 
+		var textResults = "";
 		console.log("These are the remaining programs and courses:");
 		// Display all remaining courses in "PROGRAM : COURSE" format
 		$.each(newJsonObject, function(index, value) {
-			$.each(newJsonObject[index]["courses"], function(i, v) {
-				var progName = $.trim( newJsonObject[index]["progName"] );
-				var courseName = $.trim( newJsonObject[index]["courses"][i]["name"] );
-				var progURL = $.trim( newJsonObject[index]["progUrl"] );
+			var progName = $.trim( newJsonObject[index]["progName"] );
+			var progURL = $.trim( newJsonObject[index]["progUrl"] );
 
+			// // For each program set up a banner
+			// $.get('img/' + progURL + '.jpg').done(function() { 
+			//         // Do something now you know the image exists.
+
+			//     }).fail(function() { 
+			//         // Image doesn't exist - do something else.
+			//         console.log(progName + ' Photo does not exist')
+			//     })
+
+			$.each(newJsonObject[index]["courses"], function(i, v) {
+				// Obtain all the relevant information
+
+				var courseName = $.trim( newJsonObject[index]["courses"][i]["name"] );
+				
+				// Set up div and get course/program information
 				textResults += '<div class="content-box">'
 				console.log( progName + ": " + courseName + " (test)");
 				textResults += "<a href='http://www.oxbridgeprograms.com/Programs/" + progURL + "'>" + 
-					progName + "</a> " + "<h5>" + courseName + "</h5>";
+					progName + "</a> " + "<h6>" + courseName + "</h6>";
 
 
 				// iteratively check the key in case of case sensitivity and truncate the description
