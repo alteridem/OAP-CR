@@ -1,6 +1,6 @@
 
 // Global Variables
-var message_length = 250
+var message_length = 225
 
 // Initialize Select2 on the relevant elements
 	$(document).ready(function() {
