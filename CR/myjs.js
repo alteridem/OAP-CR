@@ -158,7 +158,9 @@ var message_length = 225
 			textResults+= '<img class="recommend-photo-banner" ' +'src="' + imgUrl +'">';
 			// Program Title
 			textResults+= '<div class="recommend-banner-title">' 
-				+  '<h4 class="reverse" style="margin:0px;"">' + progName + '</h4>'
+				+  '<h4 class="reverse" style="margin:0px;"">' 
+				+ '<a class="reverse" href="http://www.oxbridgeprograms.com/Programs/' + progURL + '">' 
+				+ progName + '</a>' + '</h4>'
 				+ '</div>';
 			// Program Grade
 			textResults+= '<div class="recommend-banner-grade">' 

@@ -48,12 +48,12 @@
 }
 
 .recommend-banner-title {
-	padding-left: 10px;
+	padding-left: 15px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 30px;
 	background: linear-gradient(to right, rgba(9,50,102,0.8) 0%, rgba(11,97,163,0.8) 100%);
-	opacity: 0.9;
+	opacity: 0.95;
 	margin-bottom: 10px;
 	display: inline-block;
 	position: absolute;
@@ -73,7 +73,7 @@
 	padding-bottom: 5px;
 	padding-right: 30px;
 	background: linear-gradient(to right, rgba(9,50,102,0.8) 0%, rgba(11,97,163,0.8) 100%);
-	opacity: 0.9;
+	opacity: 0.95;
 	margin-bottom: 10px;
 	display: inline-block;
 	position: absolute;
