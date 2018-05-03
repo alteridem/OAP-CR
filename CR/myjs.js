@@ -136,51 +136,22 @@ var message_length = 225
 		$.each(newJsonObject, function(index, value) {
 			var progName = $.trim( newJsonObject[index]["progName"] );
 			var progURL = $.trim( newJsonObject[index]["progUrl"] );
-			var progGrades = null
-			var progDescription = null
+			var progGrades = null;
+			var progDescription = null;
+			var course_exist = false;
+			var bannertxt = '';
+			var coursetxt = '';
 
-			// Find the appropriate program
-			for (progSheet in programMetadata) {
-				if ($.trim( programMetadata[progSheet]["progName"] ) === progName) {
-					progGrades = eval( $.trim( programMetadata[progSheet]["grade"] ) );
-					progDescription = $.trim( programMetadata[progSheet]["description"] );
-				}
-			}
-
-			console.log( progGrades )
-
-			// For each program set up a banner
-			// var imgUrl = 'img/' + progURL + '.jpg';
-			var imgUrl = '/Portals/0/img/' + progURL + '.jpg';
-
-			textResults+= '<div class="recommend-banner">'
-			// Background image
-			textResults+= '<img class="recommend-photo-banner" ' +'src="' + imgUrl +'">';
-			// Program Title
-			textResults+= '<div class="recommend-banner-title">' 
-				+  '<h4 class="reverse" style="margin:0px;"">' 
-				+ '<a class="reverse" href="http://www.oxbridgeprograms.com/Programs/' + progURL + '">' 
-				+ progName + '</a>' + '</h4>'
-				+ '</div>';
-			// Program Grade
-			textResults+= '<div class="recommend-banner-grade">' 
-				+  '<h6 class="reverse" style="margin:0px;"">Grades: ' + Math.min(...progGrades)
-				+ ' - ' + Math.max(...progGrades) +'</h6>'
-				+ '</div>';
-			// Program Description
-
-			// Close out the banner
-			textResults+= '</div>'
-
+			// iterate through the course list
 			$.each(newJsonObject[index]["courses"], function(i, v) {
 				// Obtain all the relevant information
 
 				var courseName = $.trim( newJsonObject[index]["courses"][i]["name"] );
 				
 				// Set up div and get course/program information
-				textResults += '<div class="content-box">'
+				coursetxt += '<div class="content-box">'
 				console.log( progName + ": " + courseName);
-				textResults += "<a href='http://www.oxbridgeprograms.com/Programs/" + progURL + "'>" + 
+				coursetxt += "<a href='http://www.oxbridgeprograms.com/Programs/" + progURL + "'>" + 
 					progName + "</a> " + "<h6>" + courseName + "</h6>";
 
 
@@ -195,9 +166,47 @@ var message_length = 225
 					}
 				}
 				
-				textResults += desc;
-				textResults += "</div>"
+				coursetxt += desc;
+				coursetxt += "</div>";
+				course_exist = true;
 			});
+
+			// Add the banner if the course exists
+			
+			if (course_exist) {
+				// Find the appropriate program
+				for (progSheet in programMetadata) {
+					if ($.trim( programMetadata[progSheet]["progName"] ) === progName) {
+						progGrades = eval( $.trim( programMetadata[progSheet]["grade"] ) );
+						progDescription = $.trim( programMetadata[progSheet]["description"] );
+					}
+				}
+
+				// For each program set up a banner
+				// var imgUrl = 'img/' + progURL + '.jpg';
+				var imgUrl = '/Portals/0/img/' + progURL + '.jpg';
+
+				bannertxt+= '<div class="recommend-banner">';
+				// Background image
+				bannertxt+= '<img class="recommend-photo-banner" ' +'src="' + imgUrl +'">';
+				// Program Title
+				bannertxt+= '<div class="recommend-banner-title">' 
+					+  '<h4 class="reverse" style="margin:0px;"">' 
+					+ '<a class="reverse" href="http://www.oxbridgeprograms.com/Programs/' + progURL + '">' 
+					+ progName + '</a>' + '</h4>'
+					+ '</div>';
+				// Program Grade
+				bannertxt+= '<div class="recommend-banner-grade">' 
+					+  '<h6 class="reverse" style="margin:0px;"">Grades: ' + Math.min(...progGrades)
+					+ ' - ' + Math.max(...progGrades) +'</h6>'
+					+ '</div>';
+				// Program Description
+
+				// Close out the banner
+				bannertxt+= '</div>';
+			}
+
+			textResults += bannertxt + coursetxt;
 		});
 		
 		if (textResults === "") {
