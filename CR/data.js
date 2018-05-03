@@ -316,6 +316,20 @@ var jsonObject = [
 				]
 }, 
 {
+	"progName" : "The New York College Seminar",
+	"progUrl" : "The-New-York-College-Seminar",
+	"location" : "New York City",
+	"grade": [9, 10, 11, 12],
+	"courses" : [
+		 {"name": "Business ", "FIELD3": "", "FIELD4": "", "FIELD5": "x", "FIELD6": "", "FIELD7": "x", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "x", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "Human Rights Law ", "FIELD3": "x", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "x", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "x", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "International Relations ", "FIELD3": "x", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "x", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "Medicine ", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "x", "FIELD10": "", "FIELD11": "x", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "Psychology ", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "x", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "x", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "Public Speaking (Workshop only)", "FIELD3": "", "FIELD4": "x", "FIELD5": "", "FIELD6": "", "FIELD7": "x", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""}
+				]
+},
+{
 	"progName" : "Oxbridge at UCLA",
 	"progUrl" : "Oxbridge-at-UCLA",
 	"location" : "Los Angeles",
@@ -338,6 +352,19 @@ var jsonObject = [
 				]
 }, 
 {
+	"progName" : "Oxbridge at UCLA Prep",
+	"progUrl" : "Oxbridge-at-UCLA-Prep",
+	"location" : "Los Angeles",
+	"grade": [7, 8],
+	"courses" : [
+		 {"name": "Creative Writing", "FIELD3": "", "FIELD4": "x", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "x", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "Photography, Design, and Social Media", "FIELD3": "", "FIELD4": "x", "FIELD5": "", "FIELD6": "x", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "Speech and Debate", "FIELD3": "", "FIELD4": "x", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "x", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "Augmented Reality and Game Design", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "x", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "x", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""}
+				]
+
+},
+{
 	"progName" : "The College Experience in Boston",
 	"progUrl" : "The-College-Experience-in-Boston",
 	"location" : "Boston",
@@ -354,33 +381,6 @@ var jsonObject = [
 		 {"name": "Neuropsychology ", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "x", "FIELD12": "", "FIELD13": "x", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
 		 {"name": "Public Speaking (Workshop only)", "FIELD3": "", "FIELD4": "x", "FIELD5": "", "FIELD6": "", "FIELD7": "x", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "x", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""}
 				]
-}, 
-{
-	"progName" : "The New York College Seminar",
-	"progUrl" : "The-New-York-College-Seminar",
-	"location" : "New York City",
-	"grade": [9, 10, 11, 12],
-	"courses" : [
-		 {"name": "Business ", "FIELD3": "", "FIELD4": "", "FIELD5": "x", "FIELD6": "", "FIELD7": "x", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "x", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
-		 {"name": "Human Rights Law ", "FIELD3": "x", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "x", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "x", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
-		 {"name": "International Relations ", "FIELD3": "x", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "x", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
-		 {"name": "Medicine ", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "x", "FIELD10": "", "FIELD11": "x", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
-		 {"name": "Psychology ", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "x", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "x", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
-		 {"name": "Public Speaking (Workshop only)", "FIELD3": "", "FIELD4": "x", "FIELD5": "", "FIELD6": "", "FIELD7": "x", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""}
-				]
-},
-{
-	"progName" : "Oxbridge at UCLA Prep",
-	"progUrl" : "Oxbridge-at-UCLA-Prep",
-	"location" : "Los Angeles",
-	"grade": [7, 8],
-	"courses" : [
-		 {"name": "Creative Writing", "FIELD3": "", "FIELD4": "x", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "x", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
-		 {"name": "Photography, Design, and Social Media", "FIELD3": "", "FIELD4": "x", "FIELD5": "", "FIELD6": "x", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
-		 {"name": "Speech and Debate", "FIELD3": "", "FIELD4": "x", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "x", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
-		 {"name": "Augmented Reality and Game Design", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "x", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "x", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""}
-				]
-
 }
 ]
 

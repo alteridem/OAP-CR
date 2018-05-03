@@ -22,15 +22,14 @@
 	box-shadow: 0 0 9px black;
 }
 
-
+/* Recommender settings*/
 .content-box {
 	float: left;
-	width: 31%;
-	margin: 1%;
+	width: 29%;
+	margin: 2%;
 	height: 250px;
 }
 
-/*This is for the recommend banner*/
 .recommend-photo-banner {
 	width: 100%;
     object-fit: cover;
@@ -59,14 +58,7 @@
 	display: inline-block;
 	position: absolute;
 	bottom: 60px;
-
-	/*Remove this eventually*/
-    font-family: 'Merriweather',Times,serif;
-    font-weight: 700;
-    color: #FFF;
-    letter-spacing: normal;
 }
-
 
 .recommend-banner-grade {
 	padding-left: 15px;
@@ -79,12 +71,6 @@
 	display: inline-block;
 	position: absolute;
 	bottom: 10px;
-
-	/*Remove this eventually*/
-    font-family: 'Merriweather',Times,serif;
-    font-weight: 700;
-    color: #FFF;
-    letter-spacing: normal;
 }
 
 /*This is for the show more feature*/
@@ -100,7 +86,7 @@
 
 .hideContent {
     overflow: hidden;
-    height: 250px;
+    height: 300px;
 }
 
 .showContent {

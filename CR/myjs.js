@@ -154,7 +154,7 @@ var message_length = 225
 			var progURL = $.trim( newJsonObject[index]["progUrl"] );
 			var progGrades = null;
 			var progDescription = null;
-			var course_exist = false;
+			var courseCount = 0;
 			var bannertxt = '';
 			var coursetxt = '';
 
@@ -184,11 +184,11 @@ var message_length = 225
 				
 				coursetxt += desc;
 				coursetxt += "</div>";
-				course_exist = true;
+				courseCount += 1;
 			});
 
 			// Add the banner if the course exists
-			if (course_exist) {
+			if (courseCount > 0) {
 				// Find the appropriate program
 				for (progSheet in programMetadata) {
 					if ($.trim( programMetadata[progSheet]["progName"] ) === progName) {
@@ -222,8 +222,10 @@ var message_length = 225
 			}
 
 			// Add the show more feature
-			coursetxt = '<div class="course-content hideContent">' + coursetxt + '</div>'
-				+ '<div class="show-more"><a href="javascript:void(0)" class="reverse">Show more</a></div>';
+			if (courseCount > 3) {
+				coursetxt = '<div class="course-content hideContent">' + coursetxt + '</div>'
+					+ '<div class="show-more"><a href="javascript:void(0)" class="reverse">Show more</a></div>';
+			}
 				
 			textResults += bannertxt + coursetxt;
 		});
