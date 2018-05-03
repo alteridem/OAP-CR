@@ -26,6 +26,12 @@ var message_length = 225
 		var courseDescription = newJsonCourseDB[1]
 		var programMetadata = newJsonCourseDB[0]
 
+
+		/***************************************************************
+		*
+		* Filter out irrelevant data
+		*
+		***************************************************************/
 		// Get selected grade option
 		var selectedGrade = parseInt($(".select-cr-grade").val());
 		
@@ -120,7 +126,7 @@ var message_length = 225
 		
 		/***************************************************************
 		*
-		* Return Program and Courses
+		* Display Program and Courses
 		*
 		***************************************************************/
 
@@ -130,15 +136,38 @@ var message_length = 225
 		$.each(newJsonObject, function(index, value) {
 			var progName = $.trim( newJsonObject[index]["progName"] );
 			var progURL = $.trim( newJsonObject[index]["progUrl"] );
+			var progGrades = null
+			var progDescription = null
 
-			// // For each program set up a banner
-			// $.get('img/' + progURL + '.jpg').done(function() { 
-			//         // Do something now you know the image exists.
+			// Find the appropriate program
+			for (progSheet in programMetadata) {
+				if ($.trim( programMetadata[progSheet]["progName"] ) === progName) {
+					progGrades = eval( $.trim( programMetadata[progSheet]["grade"] ) );
+					progDescription = $.trim( programMetadata[progSheet]["description"] );
+				}
+			}
 
-			//     }).fail(function() { 
-			//         // Image doesn't exist - do something else.
-			//         console.log(progName + ' Photo does not exist')
-			//     })
+			console.log( progGrades )
+
+			// For each program set up a banner
+			var imgUrl = 'img/' + progURL + '.jpg';
+
+			textResults+= '<div class="recommend-banner">'
+			// Background image
+			textResults+= '<img class="recommend-photo-banner" ' +'src="' + imgUrl +'">';
+			// Program Title
+			textResults+= '<div class="recommend-banner-title">' 
+				+  '<h2 class="reverse" style="margin:0px;"">' + progName + '</h2>'
+				+ '</div>';
+			// Program Grade
+			textResults+= '<div class="recommend-banner-grade">' 
+				+  '<h4 class="reverse" style="margin:0px;"">Grades: ' + Math.min(...progGrades)
+				+ ' - ' + Math.max(...progGrades) +'</h2>'
+				+ '</div>';
+			// Program Description
+
+			// Close out the banner
+			textResults+= '</div>'
 
 			$.each(newJsonObject[index]["courses"], function(i, v) {
 				// Obtain all the relevant information
@@ -147,7 +176,7 @@ var message_length = 225
 				
 				// Set up div and get course/program information
 				textResults += '<div class="content-box">'
-				console.log( progName + ": " + courseName + " (test)");
+				console.log( progName + ": " + courseName);
 				textResults += "<a href='http://www.oxbridgeprograms.com/Programs/" + progURL + "'>" + 
 					progName + "</a> " + "<h6>" + courseName + "</h6>";
 

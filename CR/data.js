@@ -393,7 +393,9 @@ var jsonCourseDB = [
         "location": "Barcelona",
         "startDate": "2018-07-04T00:00:00.000Z",
         "endDate": "2018-07-31T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "Spend 4 weeks in Barcelona either improving your Spanish skills or taking advantage of the extraordinary architecture, museums, design labs, and cuisine of the cultural capital of Spain. This program offers Spanish courses for all levels -  beginner to advanced - as well as courses in English. Students can also choose to add on the Paris Connection option and spend 4 days in the French capital, exploring and visiting the main sites, before heading home.  ",
+        "tuition": 7995
     },
     "La Academia de España": {
         "progName": "La Academia de España",
@@ -402,7 +404,9 @@ var jsonCourseDB = [
         "location": "Salamanca",
         "startDate": "2018-07-03T00:00:00.000Z",
         "endDate": "2018-07-30T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "A language immersion program for students with two or more years of Spanish who wish to practice their fluency. Hone your Spanish skills in subjects such as International Business, International Relations, and Medicine, while discovering the history, cuisine, and culture of Castile, birthplace of Spanish language.",
+        "tuition": 7995
     },
     "L'Académie de France": {
         "progName": "L'Académie de France",
@@ -411,7 +415,9 @@ var jsonCourseDB = [
         "location": "Montpellier",
         "startDate": "2018-07-02T00:00:00.000Z",
         "endDate": "2018-07-29T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "A language immersion program for students with two or more years of French who aspire to achieve native fluency. Hone your French skills in subjects such as relations international, histoire de l’art, et medecine, while discovering the culture, cuisine, and joie de vivre of the south of France. Students can also choose to add on the Paris Connection option and spend 4 days in the French capital, exploring and visiting the main sites, before heading home.",
+        "tuition": 7895
     },
     "L'Académie de Paris": {
         "progName": "L'Académie de Paris",
@@ -420,7 +426,9 @@ var jsonCourseDB = [
         "location": "Paris",
         "startDate": "2018-07-02T00:00:00.000Z",
         "endDate": "2018-07-29T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "Take full advantage of the one of the world’s greatest cities and improve your French. Spend your summer exploring museums, remarkable buildings, historic sites, delicious cuisines, and all that Parisian culture has to offer. This program offers French courses for all levels - beginner to advanced - as well as courses in English.",
+        "tuition": 7995
     },
     "Oxbridge at St Andrews": {
         "progName": "Oxbridge at St Andrews",
@@ -429,7 +437,9 @@ var jsonCourseDB = [
         "location": "St Andrews",
         "startDate": "2018-06-27T00:00:00.000Z",
         "endDate": "2018-07-24T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "Students study at one of the top-ranking universities in Scotland, one that now features on the American Common Application. Popular courses include Anatomy and Physiology, Human Geography, and Terrorism in the Modern World. Participants live and study amid the ruins of a medieval cathedral, the stunning beach scenery, and in the home of golf!",
+        "tuition": 8295
     },
     "Oxbridge at UCLA": {
         "progName": "Oxbridge at UCLA",
@@ -438,7 +448,9 @@ var jsonCourseDB = [
         "location": "Los Angeles",
         "startDate": "2108-06-29T00:00:00.000Z",
         "endDate": "2018-07-26T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "Residing on the campus of the iconic University of California, Los Angeles, students choose two subjects ranging from Filmmaking to the Movie Business via Sports Medicine, and Acting. Courses take full advantage of LA’s extraordinary resources including Hollywood and Downtown, and students visit local colleges including USC and Pepperdine University.",
+        "tuition": 7895
     },
     "Oxbridge at UCLA Prep": {
         "progName": "Oxbridge at UCLA Prep",
@@ -447,7 +459,9 @@ var jsonCourseDB = [
         "location": "Los Angeles",
         "startDate": "2018-07-08T00:00:00.000Z",
         "endDate": "2018-07-28T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "Students explore Los Angeles and UCLA's campus by taking classes in subjects such as Virtual Reality and Speech and Debate. Beyond their classes, students take advantage of activities on-campus: swimming, sports, games, movie nights, and off-campus, with trips to Disneyland, Universal Studios Hollywood, Malibu and Santa Monica beaches, and more.",
+        "tuition": 6100
     },
     "Oxford Spring 1": {
         "progName": "The Oxford Spring Seminar",
@@ -456,7 +470,9 @@ var jsonCourseDB = [
         "location": "Oxford",
         "startDate": "2018-04-01T00:00:00.000Z",
         "endDate": "2018-04-08T00:00:00.000Z",
-        "session": 1
+        "session": 1,
+        "description": "This week-long seminar is a condensed version of our 4-week summer programs. It gives students and teachers the unique opportunity to experience Oxford as it blooms into spring. We also work with schools to build bespoke academic courses that complement the work their students do during the year, meaning that any path of study is possible. Individual students as well as school groups are invited to apply.",
+        "tuition": 2550
     },
     "Oxford Spring 2": {
         "progName": "The Oxford Spring Seminar",
@@ -465,7 +481,9 @@ var jsonCourseDB = [
         "location": "Oxford",
         "startDate": "2018-04-08T00:00:00.000Z",
         "endDate": "2018-04-15T00:00:00.000Z",
-        "session": 2
+        "session": 2,
+        "description": "This week-long seminar is a condensed version of our 4-week summer programs. It gives students and teachers the unique opportunity to experience Oxford as it blooms into spring. We also work with schools to build bespoke academic courses that complement the work their students do during the year, meaning that any path of study is possible. Individual students as well as school groups are invited to apply.",
+        "tuition": 2550
     },
     "Oxford Summer 1": {
         "progName": "The Oxford Summer Seminar",
@@ -474,7 +492,9 @@ var jsonCourseDB = [
         "location": "Oxford",
         "startDate": "2018-07-30T00:00:00.000Z",
         "endDate": "2018-08-06T00:00:00.000Z",
-        "session": 1
+        "session": 1,
+        "description": "These twin seminars are condensed versions of our 4-week Tradition program. Participants experience life inside the University of Oxford at the height of summer for either one or two weeks. Students choose one Major subject to explore each morning, and participate in a different workshop each afternoon. The diverse range of courses spans everything from Business to Law to Psychology.",
+        "tuition": 2700
     },
     "Oxford Summer 2": {
         "progName": "The Oxford Summer Seminar",
@@ -483,7 +503,9 @@ var jsonCourseDB = [
         "location": "Oxford",
         "startDate": "2018-08-06T00:00:00.000Z",
         "endDate": "2018-08-13T00:00:00.000Z",
-        "session": 2
+        "session": 2,
+        "description": "These twin seminars are condensed versions of our 4-week Tradition program. Participants experience life inside the University of Oxford at the height of summer for either one or two weeks. Students choose one Major subject to explore each morning, and participate in a different workshop each afternoon. The diverse range of courses spans everything from Business to Law to Psychology.",
+        "tuition": 2700
     },
     "Oxford Summer Double": {
         "progName": "The Oxford Summer Seminar",
@@ -492,7 +514,9 @@ var jsonCourseDB = [
         "location": "Oxford",
         "startDate": "2018-07-30T00:00:00.000Z",
         "endDate": "2018-08-13T00:00:00.000Z",
-        "session": 3
+        "session": 3,
+        "description": "These twin seminars are condensed versions of our 4-week Tradition program. Participants experience life inside the University of Oxford at the height of summer for either one or two weeks. Students choose one Major subject to explore each morning, and participate in a different workshop each afternoon. The diverse range of courses spans everything from Business to Law to Psychology.",
+        "tuition": 4700
     },
     "The Cambridge Prep Experience": {
         "progName": "The Cambridge Prep Experience",
@@ -501,7 +525,9 @@ var jsonCourseDB = [
         "location": "Cambridge",
         "startDate": "2018-07-07T00:00:00.000Z",
         "endDate": "2018-08-02T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "The Cambridge Prep Experience offers all the discovery and learning of the Tradition program to students in grades 8 and 9. Participants unlock the history and culture of Cambridge from their base in Peterhouse, which was founded in 1284. Popular courses include Animation, Espionage, and Veterinary Science. Students can also choose to add on the Paris Connection option and spend 4 days in the French capital, exploring and visiting the main sites, before heading home.",
+        "tuition": 8295
     },
     "The Cambridge Tradition": {
         "progName": "The Cambridge Tradition",
@@ -510,7 +536,9 @@ var jsonCourseDB = [
         "location": "Cambridge",
         "startDate": "2018-07-08T00:00:00.000Z",
         "endDate": "2018-08-04T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "The Cambridge Tradition is based in Jesus College, which dates back to the twelfth century. Students choose two courses from a range of choices, and enjoy an array of extracurricular activities from a Shakespeare Festival to a football match at Cambridge United. Popular courses include Criminology, Finance, and Asset Management. Students can also choose to add on the Paris Connection option and spend 6 days in the French capital, exploring and visiting the main sites, before heading home.",
+        "tuition": 8495
     },
     "The College Experience in Bosto": {
         "progName": "The College Experience in Boston",
@@ -519,7 +547,9 @@ var jsonCourseDB = [
         "location": "Boston",
         "startDate": "2018-06-24T00:00:00.000Z",
         "endDate": "2018-07-21T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "Living in the world-famous Harvard Law School, students choose two subjects ranging from Computer Science to Public-Speaking via Economics, Psychology, and more. They enjoy everything one of America’s greatest cities has to offer, learn to live in a collegiate environment, and visit nearby colleges including Tufts, Boston University, and MIT. Students can also choose to add on the New York connection option and spend 4 nights in New York City, visiting universities and exploring the main attractions, before heading home.  ",
+        "tuition": 8295
     },
     "The New York College Experience": {
         "progName": "The New York College Experience",
@@ -528,7 +558,9 @@ var jsonCourseDB = [
         "location": "New York City",
         "startDate": "2018-06-25T00:00:00.000Z",
         "endDate": "2018-07-22T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "Discover the world-famous Big Apple. Held on the Barnard campus at Columbia University, students choose two subjects from a wide range that includes Finance, Medical Science, Musical Theater, and more. Courses take full advantage of the museums, advertising firms, hedge funds, and the shows one can discover in the city, and students visit nearby universities including Yale, NYU, and UPENN.  ",
+        "tuition": 8295
     },
     "The New York College Seminar": {
         "progName": "The New York College Seminar",
@@ -537,7 +569,9 @@ var jsonCourseDB = [
         "location": "New York City",
         "startDate": "2018-07-31T00:00:00.000Z",
         "endDate": "2018-08-06T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "A condensed version of the 4 week program, students choose one Major subject to explore each morning, and participate in a different workshop each afternoon. They reside at Barnard College, visit the sights, and discover Columbia and New York University, and hear from experts on the college application process and interview best practices.  ",
+        "tuition": 2550
     },
     "The Oxford Prep Experience": {
         "progName": "The Oxford Prep Experience",
@@ -546,7 +580,9 @@ var jsonCourseDB = [
         "location": "Oxford",
         "startDate": "2018-06-30T00:00:00.000Z",
         "endDate": "2018-07-26T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "The Oxford Prep Experience offers all the discovery and learning of the Tradition program to students in grades 8 and 9. Participants unlock the history and culture of Oxford from their base in Oriel College. Popular courses include Genetics, Drama, and CSI Oxford. Students can also choose to add on the Paris Connection option and spend 4 days in the French capital, exploring and visiting the main sites, before heading home.",
+        "tuition": 8295
     },
     "The Oxford Tradition": {
         "progName": "The Oxford Tradition",
@@ -555,7 +591,9 @@ var jsonCourseDB = [
         "location": "Oxford",
         "startDate": "2018-07-01T00:00:00.000Z",
         "endDate": "2018-07-28T00:00:00.000Z",
-        "session": 0
+        "session": 0,
+        "description": "The program we started in 1985 remains our flagship today. OxTrad students live in the same colleges as undergraduates during the year, and work with leading academics, including Rhodes Scholars and University lecturers. They choose from a myriad of courses such as Medical Science, Business Management, and Law and Society. They also learn about UCAS and how to apply to European universities from UK admissions officers. Students can also choose to add on the Paris Connection option and spend 6 days in the French capital, exploring and visiting the main sites, before heading home.  ",
+        "tuition": 8495
     }
 },
 {

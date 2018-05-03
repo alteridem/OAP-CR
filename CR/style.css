@@ -27,5 +27,61 @@
 	float: left;
 	width: 31%;
 	margin: 1%;
-	height: 200px;
+	height: 250px;
+}
+
+.recommend-photo-banner {
+	width: 100%;
+    object-fit: cover;
+    object-position: 50% 10%;
+    position: absolute;
+}
+
+.recommend-banner {
+	width: 100%;
+	height: 350px;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background-color: black;
+}
+
+.recommend-banner-title {
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 30px;
+	background: linear-gradient(to right, rgba(9,50,102,0.8) 0%, rgba(11,97,163,0.8) 100%);
+	opacity: 0.9;
+	margin-bottom: 10px;
+	display: inline-block;
+	position: absolute;
+	bottom: 60px;
+
+	/*Remove this eventually*/
+    font-family: 'Merriweather',Times,serif;
+    font-weight: 700;
+    color: #FFF;
+    letter-spacing: normal;
+}
+
+
+.recommend-banner-grade {
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 30px;
+	background: linear-gradient(to right, rgba(9,50,102,0.8) 0%, rgba(11,97,163,0.8) 100%);
+	opacity: 0.9;
+	margin-bottom: 10px;
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+
+	/*Remove this eventually*/
+    font-family: 'Merriweather',Times,serif;
+    font-weight: 700;
+    color: #FFF;
+    letter-spacing: normal;
 }
