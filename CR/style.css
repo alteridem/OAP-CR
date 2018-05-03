@@ -30,6 +30,7 @@
 	height: 250px;
 }
 
+/*This is for the recommend banner*/
 .recommend-photo-banner {
 	width: 100%;
     object-fit: cover;
@@ -84,4 +85,25 @@
     font-weight: 700;
     color: #FFF;
     letter-spacing: normal;
+}
+
+/*This is for the show more feature*/
+.show-more {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	background: linear-gradient(to right, rgba(9,50,102,0.8) 0%, rgba(11,97,163,0.8) 100%);
+}
+
+.hideContent {
+    overflow: hidden;
+    height: 250px;
+}
+
+.showContent {
+    height: auto;
+    width: auto;
 }

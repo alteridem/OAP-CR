@@ -4,6 +4,21 @@ var message_length = 225
 
 // Initialize Select2 on the relevant elements
 	$(document).ready(function() {
+			$(document).on('click', '.show-more a', function() {
+    			var $this = $(this); 
+			    var $content = $this.parent().prev("div.course-content");
+			    var linkText = $this.text().toUpperCase();    
+			    
+			    if(linkText === "SHOW MORE"){
+			        linkText = "Show less";
+			        // $content.switchClass("hideContent", "showContent", 400);
+			        $content.addClass('showContent').removeClass('hideContent');
+			    } else {
+			        linkText = "Show more";
+			        $content.addClass('hideContent').removeClass('showContent');
+			    };
+			    $this.text(linkText);
+			});
 			$(".select-cr-location").select2({
 				dropdownParent: $('#form-cr')
 			});
@@ -15,6 +30,7 @@ var message_length = 225
 			});
 	});
 
+	
 	// Upon pressing the submit button
 	function myFunction() {
 		// Make a copy of the program array
@@ -172,7 +188,6 @@ var message_length = 225
 			});
 
 			// Add the banner if the course exists
-			
 			if (course_exist) {
 				// Find the appropriate program
 				for (progSheet in programMetadata) {
@@ -206,6 +221,10 @@ var message_length = 225
 				bannertxt+= '</div>';
 			}
 
+			// Add the show more feature
+			coursetxt = '<div class="course-content hideContent">' + coursetxt + '</div>'
+				+ '<div class="show-more"><a href="javascript:void(0)" class="reverse">Show more</a></div>';
+				
 			textResults += bannertxt + coursetxt;
 		});
 		
