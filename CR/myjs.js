@@ -150,7 +150,8 @@ var message_length = 225
 			console.log( progGrades )
 
 			// For each program set up a banner
-			var imgUrl = 'img/' + progURL + '.jpg';
+			// var imgUrl = 'img/' + progURL + '.jpg';
+			var imgUrl = '/Portals/0/img/' + progURL + '.jpg';
 
 			textResults+= '<div class="recommend-banner">'
 			// Background image
