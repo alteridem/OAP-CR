@@ -224,7 +224,9 @@ var message_length = 225
 			// Add the show more feature
 			if (courseCount > 3) {
 				coursetxt = '<div class="course-content hideContent">' + coursetxt + '</div>'
-					+ '<div class="show-more"><a href="javascript:void(0)" class="reverse">Show more</a></div>';
+					+ '<div class="show-more">' 
+					+ '<h6 class="reverse"><a href="javascript:void(0)" class="reverse">Show more</a></h6>'
+					+ '</div>';
 			}
 				
 			textResults += bannertxt + coursetxt;
