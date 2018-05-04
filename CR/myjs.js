@@ -4,10 +4,11 @@ var message_length = 225
 
 // Initialize Select2 on the relevant elements
 	$(document).ready(function() {
-			$(document).on('click', '.show-more a', function() {
+			$(document).on('click', '.show-more-button', function() {
     			var $this = $(this); 
-			    var $content = $this.parent().prev("div.course-content");
-			    var linkText = $this.text().toUpperCase();    
+			    var $content = $this.prev("div.course-content");
+			    var $buttonText = $this.find("#text-button-show-more")
+			    var linkText = $buttonText.text().toUpperCase();    
 			    
 			    if(linkText === "SHOW MORE"){
 			        linkText = "Show less";
@@ -17,7 +18,7 @@ var message_length = 225
 			        linkText = "Show more";
 			        $content.addClass('hideContent').removeClass('showContent');
 			    };
-			    $this.text(linkText);
+			    $buttonText.text(linkText);
 			});
 			$(".select-cr-location").select2({
 				dropdownParent: $('#form-cr')
@@ -201,32 +202,35 @@ var message_length = 225
 				// var imgUrl = 'img/' + progURL + '.jpg';
 				var imgUrl = '/Portals/0/img/' + progURL + '.jpg';
 
+				bannertxt+= '<a class="recommend-banner-button" href="http://www.oxbridgeprograms.com/Programs/' + progURL + '">'
 				bannertxt+= '<div class="recommend-banner">';
 				// Background image
 				bannertxt+= '<img class="recommend-photo-banner" ' +'src="' + imgUrl +'">';
 				// Program Title
 				bannertxt+= '<div class="recommend-banner-title">' 
 					+  '<h4 class="reverse" style="margin:0px;"">' 
-					+ '<a class="reverse" href="http://www.oxbridgeprograms.com/Programs/' + progURL + '">' 
-					+ progName + '</a>' + '</h4>'
+					+ progName + '</h4>'
 					+ '</div>';
 				// Program Grade
 				bannertxt+= '<div class="recommend-banner-grade">' 
 					+  '<h6 class="reverse" style="margin:0px;"">Grades: ' + Math.min(...progGrades)
 					+ ' - ' + Math.max(...progGrades) +'</h6>'
 					+ '</div>';
-				// Program Description
+				// Program Description (TODO)
 
 				// Close out the banner
 				bannertxt+= '</div>';
+				bannertxt+= '</a>';
 			}
 
 			// Add the show more feature
 			if (courseCount > 3) {
 				coursetxt = '<div class="course-content hideContent">' + coursetxt + '</div>'
+					+ '<a href="javascript:void(0)" class="show-more-button">'
 					+ '<div class="show-more">' 
-					+ '<h6 class="reverse"><a href="javascript:void(0)" class="reverse">Show more</a></h6>'
-					+ '</div>';
+					+ '<h6 class="reverse" id="text-button-show-more">Show more</h6>'
+					+ '</div>'
+					+ '</a>';
 			}
 				
 			textResults += bannertxt + coursetxt;

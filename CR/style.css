@@ -93,3 +93,11 @@
     height: auto;
     width: auto;
 }
+
+.show-more-button:hover > div {
+        background-color:rgba(0, 0, 0, 0.5);
+    }
+
+.recommend-banner-button:hover > div {
+        background-color:rgba(0, 0, 0, 0.5);
+    }
