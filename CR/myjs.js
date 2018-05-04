@@ -208,13 +208,13 @@ var message_length = 225
 				bannertxt+= '<img class="recommend-photo-banner" ' +'src="' + imgUrl +'">';
 				// Program Title
 				bannertxt+= '<div class="recommend-banner-title">' 
-					+  '<h4 class="reverse" style="margin:0px;"">' 
+					+  '<h4 class="reverse" style="margin:0px;">' 
 					+ progName + '</h4>'
 					+ '</div>';
 				// Program Grade
 				bannertxt+= '<div class="recommend-banner-grade">' 
-					+  '<h6 class="reverse" style="margin:0px;"">Grades: ' + Math.min(...progGrades)
-					+ ' - ' + Math.max(...progGrades) +'</h6>'
+					+ '<h6 class="reverse" style="margin:0px;">Grades: ' + Math.min.apply(null, progGrades)
+					+ ' - ' + Math.max.apply(null, progGrades) +'</h6>'
 					+ '</div>';
 				// Program Description (TODO)
 
