@@ -184,6 +184,7 @@ var message_length = 225
 				}
 				
 				coursetxt += desc;
+				coursetxt += "<a href='http://oxbridgeprograms.com/Courses'> Read More </a>" ;
 				coursetxt += "</div>";
 				courseCount += 1;
 			});
