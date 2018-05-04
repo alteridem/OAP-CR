@@ -232,6 +232,9 @@ var message_length = 225
 					+ '</div>'
 					+ '</a>';
 			}
+			else {
+				coursetxt = '<div class="course-content showContent">' + coursetxt + '</div>'
+			}
 				
 			textResults += bannertxt + coursetxt;
 		});

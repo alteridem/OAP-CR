@@ -92,8 +92,11 @@
 .showContent {
     height: auto;
     width: auto;
+    overflow: auto;
+    overflow-y: hidden;
 }
 
+/*This is for the hover over button feature*/
 .show-more-button:hover > div {
         background-color:rgba(0, 0, 0, 0.5);
     }
