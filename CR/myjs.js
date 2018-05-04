@@ -179,7 +179,7 @@ var message_length = 225
 						var temp = courseDescription[ progName ][ course ]
 						if( temp.length > message_length )
 							temp = temp.substring(0, message_length) + "..."
-						desc = "<p>" + temp + "</p><br />";
+						desc = "<p>" + temp + "</p>";
 					}
 				}
 				
