@@ -232,7 +232,7 @@ var message_length = 225
 					+ '</div>'
 					+ '</a>';
 			}
-			else {
+			else if (courseCount > 0) {
 				coursetxt = '<div class="course-content showContent">' + coursetxt + '</div>'
 			}
 				
