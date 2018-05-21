@@ -154,6 +154,8 @@ var message_length = 225
 			var progName = $.trim( newJsonObject[index]["progName"] );
 			var progURL = $.trim( newJsonObject[index]["progUrl"] );
 			var progGrades = null;
+			var progStartDate = null;
+			var progEndDate = null;
 			var progDescription = null;
 			var courseCount = 0;
 			var bannertxt = '';
@@ -195,6 +197,8 @@ var message_length = 225
 				for (progSheet in programMetadata) {
 					if ($.trim( programMetadata[progSheet]["progName"] ) === progName) {
 						progGrades = eval( $.trim( programMetadata[progSheet]["grade"] ) );
+						progStartDate = $.trim( programMetadata[progSheet]["startDate"] );
+						progEndDate = $.trim( programMetadata[progSheet]["endDate"] );
 						progDescription = $.trim( programMetadata[progSheet]["description"] );
 					}
 				}
@@ -212,12 +216,22 @@ var message_length = 225
 					+  '<h4 class="reverse" style="margin:0px;">' 
 					+ progName + '</h4>'
 					+ '</div>';
+				// Program Date
+				progStartDate = progStartDate.split('T')[0];
+				progStartDate = progStartDate.split('-');
+				progEndDate = progEndDate.split('T')[0];
+				progEndDate = progEndDate.split('-');
+				
+				progStartDate = progStartDate[1] + '/' + progStartDate[2];
+				progEndDate = progEndDate[1] + '/' + progEndDate[2];
+
 				// Program Grade
 				bannertxt+= '<div class="recommend-banner-grade">' 
 					+ '<h6 class="reverse" style="margin:0px;">Grades: ' + Math.min.apply(null, progGrades)
-					+ ' - ' + Math.max.apply(null, progGrades) +'</h6>'
+					+ ' - ' + Math.max.apply(null, progGrades) + '</h6>'
 					+ '</div>';
 				// Program Description (TODO)
+
 
 				// Close out the banner
 				bannertxt+= '</div>';
@@ -229,7 +243,7 @@ var message_length = 225
 				coursetxt = '<div class="course-content hideContent">' + coursetxt + '</div>'
 					+ '<a href="javascript:void(0)" class="show-more-button">'
 					+ '<div class="show-more">' 
-					+ '<h6 class="reverse" id="text-button-show-more">Show more</h6>'
+					+ '<h6 class="reverse" id="text-button-show-more">Show more courses</h6>'
 					+ '</div>'
 					+ '</a>';
 			}
