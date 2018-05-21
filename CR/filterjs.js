@@ -173,21 +173,26 @@ var message_length = 225
 			console.log( key );
 
 			// Panel group
-			textResults += '<div class="panel-group" id="accordion-program-' + cid + '">';
-			
+			textResults += '<div class="panel-group" id="custom-accordion-program-' + cid + '">';
 			// Styling container
 			textResults += '<div class="panel panel-default">';
+
 			// Header
 			textResults += '<div class="panel-heading"> <h4 class="panel-title">';
-
 	        // Enter in the course title
-	        textResults += '<a data-toggle="collapse" data-parent="#accordion-program-'+ cid
-	        	+ '" href="#collapse-program-'+ cid +'" class="collapsed" aria-expanded="false">'
+	        textResults += '<a data-toggle="collapse" data-parent="#custom-accordion-program-'+ cid
+	        	+ '" href="#custom-collapse-program-'+ cid +'" class="collapsed" aria-expanded="false">'
 	        	+ key
 	        	+ '</a>';
-
 	        // Header end
 	        textResults += '</h4> </div>';
+
+	       	// Add description boxes
+	       	textResults += '<div id="custom-collapse-program-'+cid+'" class="panel-collapse collapse" aria-expanded="false" tabindex="-1" style="height:0px;">';
+	       	// Content
+	       	textResults += '<div class="panel-body">' + 'This is a test' + '</div>';
+	       	textResults += '</div>';
+
 	        // Styling container end
 	        textResults += '</div>';
 	        // Panel group end
