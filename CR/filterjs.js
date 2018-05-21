@@ -168,6 +168,7 @@ var message_length = 225
 
 		var textResults = '<div id="course-table">';
 		var cid = 0;
+		var UID = new Date().valueOf();
 		console.log("These are the remaining programs and courses:");
 		Object.keys( filtered_list ).sort().forEach(function(key, value) {
 			console.log( key );
@@ -189,9 +190,27 @@ var message_length = 225
 
 	       	// Add description boxes
 	       	textResults += '<div id="custom-collapse-program-'+cid+'" class="panel-collapse collapse" aria-expanded="false" tabindex="-1" style="height:0px;">';
-	       	// Content
-	       	textResults += '<div class="panel-body">' + 'This is a test' + '</div>';
-	       	textResults += '</div>';
+	       	textResults += '<div class="panel-body">';
+
+	       	//iteratively put in the content:
+	       	for (var prog in filtered_list[ key ]) {
+	       		UID += 1;
+	       		textResults += '<div class="bs-example"><div class="panel-group" id="accordion-program-'+cid+'-'+UID+'">'
+      				+ '<div class="panel panel-default">'
+         			+ '<div class="panel-heading">'
+            		+ '<h4 class="panel-title">'
+            		+ '<a data-toggle="collapse" data-parent="#collapse-program-'+cid
+            		+ '" href="#collapse-program-'+cid+'-'+UID+'" class="" aria-expanded="true">';
+            	textResults += prog;
+            	textResults += '</a></h4></div>';
+            	textResults += '<div id="collapse-program-'+cid+'-'+UID+'" class="panel-collapse in collapse show" aria-expanded="true" tabindex="-1" style="">'
+            		+ '<div class="panel-body">'
+                	+ '<p>';
+                textResults += filtered_list[ key ][ prog ];
+                textResults += '</p></div></div></div></div></div>';
+	       	}
+
+	       	textResults += '</div></div>';
 
 	        // Styling container end
 	        textResults += '</div>';
