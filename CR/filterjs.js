@@ -205,7 +205,7 @@ var message_length = 225
             	textResults += '</a></h4></div>';
             	textResults += '<div id="collapse-program-'+cid+'-'+UID+'" class="panel-collapse in collapse show" aria-expanded="true" tabindex="-1" style="">'
             		+ '<div class="panel-body">'
-                	+ '<p>';
+                	+ '<p class="Pa13">';
                 textResults += filtered_list[ key ][ prog ];
                 textResults += '</p></div></div></div></div></div>';
 	       	}
