@@ -203,7 +203,7 @@ var message_length = 225
             		+ '" href="#collapse-program-'+cid+'-'+UID+'" class="" aria-expanded="true">';
             	textResults += prog;
             	textResults += '</a></h4></div>';
-            	textResults += '<div id="collapse-program-'+cid+'-'+UID+'" class="panel-collapse in collapse show" aria-expanded="true" tabindex="-1" style="">'
+            	textResults += '<div id="collapse-program-'+cid+'-'+UID+'" class="panel-collapse in collapse" aria-expanded="true" tabindex="-1" style="">'
             		+ '<div class="panel-body">'
                 	+ '<p class="Pa13">';
                 textResults += filtered_list[ key ][ prog ];
