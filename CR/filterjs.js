@@ -195,6 +195,13 @@ var message_length = 225
 	       	//iteratively put in the content:
 	       	for (var prog in filtered_list[ key ]) {
 	       		UID += 1;
+	       		progGrades = null;
+				// Find the appropriate program
+				for (progSheet in programMetadata) {
+					if ($.trim( programMetadata[progSheet]["progName"] ) === prog) {
+						progGrades = eval( $.trim( programMetadata[progSheet]["grade"] ) );
+					}
+				}
 	       		textResults += '<div class="bs-example"><div class="panel-group" id="accordion-program-'+cid+'-'+UID+'">'
       				+ '<div class="panel panel-default">'
          			+ '<div class="panel-heading">'
@@ -202,6 +209,7 @@ var message_length = 225
             		+ '<a data-toggle="collapse" data-parent="#collapse-program-'+cid
             		+ '" href="#collapse-program-'+cid+'-'+UID+'" class="" aria-expanded="true">';
             	textResults += prog;
+            	textResults += ' (Grades: ' + Math.min.apply(null, progGrades) + ' - ' + Math.max.apply(null, progGrades) + ')';
             	textResults += '</a></h4></div>';
             	textResults += '<div id="collapse-program-'+cid+'-'+UID+'" class="panel-collapse in collapse" aria-expanded="true" tabindex="-1" style="">'
             		+ '<div class="panel-body">'
