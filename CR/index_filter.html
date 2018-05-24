@@ -21,7 +21,8 @@
 <body>
 	   <h1>Course recommender:</h1>
 		<div id="form-cr">
-			<select class="select-cr-grade">
+			<select class="select-cr-grade" data-placeholder="GRADE">
+				<option name="grade" value="0">Grade -</option>
 	   			<option name="grade" value="7">Grade 7</option>
 				<option name="grade" value="8">Grade 8</option>
 				<option name="grade" value="9">Grade 9</option>
@@ -29,7 +30,7 @@
 				<option name="grade" value="11">Grade 11</option>
 				<option name="grade" value="12">Grade 12</option>
 			</select>	
-			<select class="select-cr-location" multiple="multiple" data-placeholder="Select location">
+			<select class="select-cr-location" multiple="multiple" data-placeholder="LOCATION">
 				<option name="location" value="Cambridge">Cambridge</option>
 				<option name="location" value="Oxford">Oxford</option>
 				<option name="location" value="St Andrews"> St Andrews<br>
@@ -41,7 +42,7 @@
 				<option name="location" value="Los Angeles"> Los Angeles<br>
 				<option name="location" value="Boston"> Boston
 			</select>
-			<select class="select-cr-cat" multiple="multiple" data-placeholder="Select category">
+			<select class="select-cr-cat" multiple="multiple" data-placeholder="CATEGORY">
 				 <option name="category" value="FIELD3"> History<br>
 				 <option name="category" value="FIELD4"> The Arts and Performance<br>
 				 <option name="category" value="FIELD5"> Business and Economics<br>

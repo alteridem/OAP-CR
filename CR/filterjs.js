@@ -15,6 +15,10 @@ var message_length = 225
 			});
 	});
 
+// Run the script on load
+	window.onload = function() {
+	  myFunction();
+	};
 	
 	// Upon pressing the submit button
 	function myFunction() {
@@ -34,7 +38,7 @@ var message_length = 225
 		*
 		***************************************************************/
 		// Get selected grade option
-		var selectedGrade = parseInt($(".select-cr-grade").val());
+		var selectedGrade = null;
 		
 		// BY LOCATION: If one or more locations is selected 
 		if ($(".select-cr-location").val() !== null ) {
@@ -61,16 +65,19 @@ var message_length = 225
 		}
 		
 		// BY GRADE: Iterate through remaining array of programs
-		for (var i = 0; i <newJsonObject.length; i++) {
-			// Check if the selected grade exists in current program's grade array
-			var toSplice = $.inArray(selectedGrade, newJsonObject[i]["grade"]);
-			if (toSplice == -1) {
-				// If selected grade doesn't exist in grade array, remove that program
-				newJsonObject.splice(i, 1);
-				i--;
+		if ($(".select-cr-grade").val() !== "0" ) {
+			selectedGrade = parseInt($(".select-cr-grade").val());
+			for (var i = 0; i <newJsonObject.length; i++) {
+				// Check if the selected grade exists in current program's grade array
+				var toSplice = $.inArray(selectedGrade, newJsonObject[i]["grade"]);
+				if (toSplice == -1) {
+					// If selected grade doesn't exist in grade array, remove that program
+					newJsonObject.splice(i, 1);
+					i--;
+				}
 			}
 		}
-		
+
 		// BY CATEGORY: If one or more categories is selected
 		if ($(".select-cr-cat").val() !== null) {
 			// Make array containing all selected categories
