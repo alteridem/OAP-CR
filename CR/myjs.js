@@ -10,12 +10,12 @@ var message_length = 225
 			    var $buttonText = $this.find("#text-button-show-more")
 			    var linkText = $buttonText.text().toUpperCase();    
 			    
-			    if(linkText === "SHOW MORE"){
+			    if(linkText === "Show more courses"){
 			        linkText = "Show less";
 			        // $content.switchClass("hideContent", "showContent", 400);
 			        $content.addClass('showContent').removeClass('hideContent');
 			    } else {
-			        linkText = "Show more";
+			        linkText = "Show more courses";
 			        $content.addClass('hideContent').removeClass('showContent');
 			    };
 			    $buttonText.text(linkText);
