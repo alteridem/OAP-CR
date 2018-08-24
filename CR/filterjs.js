@@ -13,8 +13,25 @@ var message_length = 225
 			$(".select-cr-grade").select2({
 				dropdownParent: $('#form-cr')
 			});
+
+			//
+			var select = GetUrlParameter("select-cr-cat");
+  			$("#" + select).attr("selected", "");
 	});
 
+//Get the parameter to select from the URL
+	function GetUrlParameter(name) {
+	    var value;
+	    $.each(window.location.search.slice(1).split("&"), function (i, kvp) {
+	        var values = kvp.split("=");
+	        if (name === values[0]) {
+	            value = values[1] ? values[1] : values[0];
+	            return false;
+	        }
+	    });
+    return value;
+	}
+	
 // Run the script on load
 	window.onload = function() {
 	  myFunction();
