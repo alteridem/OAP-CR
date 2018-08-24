@@ -16,7 +16,7 @@ var message_length = 225
 
 			// set the category if predefined
 			var select = GetUrlParameter("select-cr-cat");
-			console.log( select );
+			console.log( "The select parameter is: " + select );
   			$(".select-cr-cat").val(select).trigger('change');
 	});
 
@@ -194,9 +194,9 @@ var message_length = 225
 		var textResults = '<div id="course-table">';
 		var cid = 0;
 		var UID = new Date().valueOf();
-		console.log("These are the remaining programs and courses:");
+		// console.log("These are the remaining programs and courses:");
 		Object.keys( filtered_list ).sort().forEach(function(key, value) {
-			console.log( key );
+			// console.log( key );
 
 			// Panel group
 			textResults += '<div class="panel-group" id="custom-accordion-program-' + cid + '">';
