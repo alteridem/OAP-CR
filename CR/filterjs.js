@@ -14,9 +14,10 @@ var message_length = 225
 				dropdownParent: $('#form-cr')
 			});
 
-			//
+			// set the category if predefined
 			var select = GetUrlParameter("select-cr-cat");
-  			$("#" + select).attr("selected", "");
+			console.log( select );
+  			$(".select-cr-cat").val(select).trigger('change');
 	});
 
 //Get the parameter to select from the URL
@@ -31,7 +32,7 @@ var message_length = 225
 	    });
     return value;
 	}
-	
+
 // Run the script on load
 	window.onload = function() {
 	  myFunction();
