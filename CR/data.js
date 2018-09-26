@@ -68,6 +68,27 @@
 				]
 }, 
 {
+"progName" : "The Oxford Summer Seminar",
+	"progUrl": "The-Oxford-Summer-Seminar",
+	"location" : "Oxford",
+	"grade": [10,11,12],
+	"courses" : [
+		 {"name": "Business", "FIELD3": "", "FIELD4": "", "FIELD5": "x", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		{"name": "Creative Writing", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "x", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "Critical Thinking", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "x", "FIELD11": "", "FIELD12": "", "FIELD13": "x", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "Economics", "FIELD3": "", "FIELD4": "", "FIELD5": "x", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "English Literature", "FIELD3": "x", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "x", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "Genetics", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "x", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "History", "FIELD3": "x", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "International Relations", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "x", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "x", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "Law", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "x", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "Medicine", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "x", "FIELD7": "", "FIELD8": "", "FIELD9": "x", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "x", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		 {"name": "Politics", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "x", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "", "FIELD14": "x", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""},
+		{"name": "Psychology", "FIELD3": "", "FIELD4": "", "FIELD5": "", "FIELD6": "", "FIELD7": "", "FIELD8": "", "FIELD9": "", "FIELD10": "", "FIELD11": "", "FIELD12": "", "FIELD13": "x", "FIELD14": "x", "FIELD15": "", "FIELD16": "", "FIELD17": "", "FIELD18": ""}
+	
+				]
+}, 
+{
 	"progName" : "The Oxford Prep Experience",
 	"progUrl" : "The-Oxford-Prep-Experience",
 	"location" : "Oxford",
